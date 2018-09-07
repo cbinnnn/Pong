@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public Text Score1Text;
     public Text Score2Text;
     public GameObject overText;
-
+    public int PropCount = 1;
     private void Awake()
     {
         _instance = this;
@@ -39,6 +39,10 @@ public class GameManager : MonoBehaviour
     {
         ResetWall();
         ResetPlayer();
+    }
+    private void Update()
+    {
+        FillProp();
     }
     //初始化墙体
     void ResetWall()
@@ -70,6 +74,13 @@ public class GameManager : MonoBehaviour
         Player1.position = new Vector3(Player1Pos.x, Player1Pos.y, 0);
         Player2.position = new Vector3(Player2Pos.x, Player2Pos.y, 0);
     }
+    public void FillProp()
+    {
+        for(int i = 0; i < PropCount - PropManager.Instance.CloneCount; i++)
+        {
+            PropManager.Instance.InitProp();
+        }
+    }
     //分数处理函数
     public void ChangeScore(string wallName)
     {
@@ -80,7 +91,23 @@ public class GameManager : MonoBehaviour
 
         Score1Text.text = score1.ToString();
         Score2Text.text = score2.ToString();
-        if(score1==15||score2==15)
+        if (score1 == 3 || score2 == 3)
+        {
+            PropCount = 2;
+        }
+        if (score1 == 6 || score2 == 6)
+        {
+            PropCount = 3;
+        }
+        if (score1 == 9 || score2 == 9)
+        {
+            PropCount = 3;
+        }
+        if (score1 == 12 || score2 == 12)
+        {
+            PropCount = 4;
+        }
+        if (score1==15||score2==15)
         {
             if (score1 == 15)
                 overText.GetComponent<Text>().text = "Com Win!!!";

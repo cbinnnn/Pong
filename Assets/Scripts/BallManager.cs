@@ -9,7 +9,7 @@ public class BallManager : MonoBehaviour {
     private static Vector2 speed;
     private static Vector2 player1Scale;
     private static Vector2 player2Scale;
-    public float maxSpeed = 16f;//设置最大速度
+    public float maxSpeed = 12f;//设置最大速度
     // Use this for initialization
     void Start()
     {
@@ -70,7 +70,7 @@ public class BallManager : MonoBehaviour {
         //小球加速
         if (collision.CompareTag("Up"))
         {
-            r2d.velocity *= 1.7f;
+            r2d.velocity *= 1.5f;
             if (r2d.velocity.x > maxSpeed)
                 r2d.velocity = new Vector2(maxSpeed, r2d.velocity.y);
             //5秒后重置速度
@@ -120,9 +120,8 @@ public class BallManager : MonoBehaviour {
             }
         }
         //销毁道具
-        Destroy(collision.gameObject);
-        //再生成道具
-        PropManager.Instance.InitProp();
+        PropManager.Instance.PutBack(collision.gameObject);
+        PropManager.Instance.CloneCount--;
     }
     //重置速度
     void reSpeed()

@@ -2445,6 +2445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5913d15805e1c414fa77983e9a8afba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CloneCount: 0
   propArr:
   - {fileID: 1468748822474304, guid: 1bc3a0508d9c28048b186b52b774f6fc, type: 2}
   - {fileID: 1178995719205058, guid: a9515216ff4e8f14083f24cec1184c8f, type: 2}
@@ -2495,6 +2496,7 @@ MonoBehaviour:
   Score1Text: {fileID: 582705139}
   Score2Text: {fileID: 1794115454}
   overText: {fileID: 2004348565}
+  PropCount: 1
 --- !u!4 &2054651121
 Transform:
   m_ObjectHideFlags: 0

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using HedgehogTeam.EasyTouch;//引入EasyTouch插件
 //Player控制
 public class PlayerController : MonoBehaviour {
     private Rigidbody2D r2d;
