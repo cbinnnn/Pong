@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 58731130519119076}
   m_Layer: 0
   m_Name: Life
-  m_TagString: Up
+  m_TagString: Life
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135978812125932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13295412, y: -1.3078613, z: 1.4810578}
+  m_LocalPosition: {x: 1.79203, y: -0.95164657, z: 1.4810578}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55,7 +55,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.4999999
+  m_Radius: 2
 --- !u!212 &212572409093734894
 SpriteRenderer:
   m_ObjectHideFlags: 1

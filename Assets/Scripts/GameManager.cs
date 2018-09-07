@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         FillProp();
+        PropManager.Instance.EndLife();
     }
     //初始化墙体
     void ResetWall()
@@ -94,18 +95,22 @@ public class GameManager : MonoBehaviour
         if (score1 == 3 || score2 == 3)
         {
             PropCount = 2;
+            StartCoroutine(PropManager.Instance.InitLife());
         }
         if (score1 == 6 || score2 == 6)
         {
             PropCount = 3;
+            StartCoroutine(PropManager.Instance.InitLife());
         }
         if (score1 == 9 || score2 == 9)
         {
             PropCount = 3;
+            StartCoroutine(PropManager.Instance.InitLife());
         }
         if (score1 == 12 || score2 == 12)
         {
             PropCount = 4;
+            StartCoroutine(PropManager.Instance.InitLife());
         }
         if (score1==15||score2==15)
         {

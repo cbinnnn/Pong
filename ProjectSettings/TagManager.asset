@@ -9,6 +9,7 @@ TagManager:
   - Plus
   - Minus
   - Com
+  - Life
   layers:
   - Default
   - TransparentFX

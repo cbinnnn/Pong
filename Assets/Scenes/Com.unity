@@ -2446,11 +2446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CloneCount: 0
-  propArr:
-  - {fileID: 1468748822474304, guid: 1bc3a0508d9c28048b186b52b774f6fc, type: 2}
-  - {fileID: 1178995719205058, guid: a9515216ff4e8f14083f24cec1184c8f, type: 2}
-  - {fileID: 1099382485659440, guid: 5a46a4195655ed64c9ea5afb695fd1a6, type: 2}
-  - {fileID: 1135978812125932, guid: 7155b1e8baf14fd4a816268b427acb79, type: 2}
 --- !u!1 &2004348565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1920805226524170, guid: 99321d8a33ed40442ba28cc1f076776f,

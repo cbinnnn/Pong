@@ -119,6 +119,23 @@ public class BallManager : MonoBehaviour {
                 Invoke("rePlayer2", 8);
             }
         }
+        if (collision.CompareTag("Life"))
+        {
+            if (r2d.velocity.x > 0)
+            {
+                if(GameManager.Instance.score1>0)
+                    GameManager.Instance.score1--;
+            }
+            else
+            {
+                if (GameManager.Instance.score2 > 0)
+                    GameManager.Instance.score2--;
+            }
+            GameManager.Instance.Score1Text.text = GameManager.Instance.score1.ToString();
+            GameManager.Instance.Score2Text.text = GameManager.Instance.score2.ToString();
+            PropManager.Instance.PutBack(collision.gameObject);
+            return;
+        }
         //销毁道具
         PropManager.Instance.PutBack(collision.gameObject);
         PropManager.Instance.CloneCount--;
