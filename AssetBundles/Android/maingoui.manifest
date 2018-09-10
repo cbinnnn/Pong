@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 1092528280
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d89a9d260f15c8bb3d6be1b80cbbf382
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Sprites/Ball.png
+- Assets/Sprites/Player.png
+Dependencies: []

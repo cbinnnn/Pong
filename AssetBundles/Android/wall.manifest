@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 3507416728
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6c4ee90e9e616f4ffad6298dcc2b4ca7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 66db23acad6e24b7fba633afbe892af0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8206e7c35f2a11b46a554a37bdfd40dd, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/upWall.prefab
+- Assets/Resources/downWall.prefab
+- Assets/Resources/rightWall.prefab
+- Assets/Resources/leftWall.prefab
+Dependencies:
+- D:/UnityProjects/Pong/AssetBundles/Android/audios

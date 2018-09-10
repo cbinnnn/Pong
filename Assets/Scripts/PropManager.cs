@@ -13,6 +13,8 @@ public class PropManager : MonoBehaviour {
             return _instance;
         }
     }
+    public AssetBundle propAB;
+    public AssetBundle propuiAB;
     public int CloneCount=0;
     private int count = 4;
     private List<GameObject> downList = new List<GameObject>();
@@ -35,6 +37,8 @@ public class PropManager : MonoBehaviour {
     }
     private void Start()
     {
+        propuiAB = AssetBundle.LoadFromFile("AssetBundles/Android/propui");
+        propAB = AssetBundle.LoadFromFile("AssetBundles/Android/prop");
         InitPool();
     }
     //道具生成
@@ -47,6 +51,7 @@ public class PropManager : MonoBehaviour {
         Vector2 propPos = new Vector2(posX, posY);
         initProp.transform.position = propPos;
         CloneCount++;
+        propAB.Unload(false);
     }
     public IEnumerator InitLife()
     {
@@ -56,7 +61,8 @@ public class PropManager : MonoBehaviour {
             GameObject initLife = GetProp(5);
             initLife.transform.position = new Vector2(posX = Random.Range(-3.5f, 3.5f), 5.5f);
             initLife.transform.DOMoveY(-5.5f, 3).SetEase(Ease.Linear);
-        }            
+        }
+        propAB.Unload(false);
     }
     public void EndLife()
     {
@@ -78,7 +84,6 @@ public class PropManager : MonoBehaviour {
             CreateProp(3);
             CreateProp(4);
             CreateProp(5);
-
         }
     }
     //实例化道具，加入到列表中，并隐藏
@@ -87,31 +92,31 @@ public class PropManager : MonoBehaviour {
         GameObject go;
         if (index == 1)
         {
-            go = Instantiate(Resources.Load("Down") as GameObject);
+            go = Instantiate(propAB.LoadAsset<GameObject>("Down"));
             go.SetActive(false);
             downList.Add(go);
         }
         else if (index == 2)
         {
-            go = Instantiate(Resources.Load("Up") as GameObject);
+            go = Instantiate(propAB.LoadAsset<GameObject>("Up"));
             go.SetActive(false);
             upList.Add(go);
         }
        else if (index == 3)
         {
-            go = Instantiate(Resources.Load("Plus") as GameObject);
+            go = Instantiate(propAB.LoadAsset<GameObject>("Plus"));
             go.SetActive(false);
             plusList.Add(go);
         }
        else  if (index == 4)
         {
-            go = Instantiate(Resources.Load("Minus") as GameObject);
+            go = Instantiate(propAB.LoadAsset<GameObject>("Minus"));
             go.SetActive(false);
             minusList.Add(go);
         }
         else
         {
-            go = Instantiate(Resources.Load("Life") as GameObject);
+            go = Instantiate(propAB.LoadAsset<GameObject>("Life"));
             go.SetActive(false);
             lifeList.Add(go);
         }

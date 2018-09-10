@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 784876687
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dd05c86903942809959c3238ceaece6c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5fbc9bfac5021681a32bca411a32c547
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/Down.prefab
+- Assets/Resources/Minus.prefab
+- Assets/Resources/Up.prefab
+- Assets/Resources/Plus.prefab
+- Assets/Resources/Life.prefab
+Dependencies:
+- D:/UnityProjects/Pong/AssetBundles/Android/propui

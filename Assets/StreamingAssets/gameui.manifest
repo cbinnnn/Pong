@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3714496201
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 236820b8848b5ca9028c2a4845d87c1d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Sprites/downCtrl.png
+- Assets/Sprites/upCtrl.png
+Dependencies: []

@@ -1,0 +1,52 @@
+ManifestFileVersion: 0
+CRC: 1770924899
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: prop
+      Dependencies:
+        Dependency_0: propui
+    Info_1:
+      Name: share
+      Dependencies: {}
+    Info_2:
+      Name: wall
+      Dependencies:
+        Dependency_0: audios
+    Info_3:
+      Name: audios
+      Dependencies: {}
+    Info_4:
+      Name: maingo
+      Dependencies:
+        Dependency_0: audios
+        Dependency_1: maingoui
+    Info_5:
+      Name: propui
+      Dependencies: {}
+    Info_6:
+      Name: maingoui
+      Dependencies: {}
+    Info_7:
+      Name: menuui
+      Dependencies: {}
+    Info_8:
+      Name: gameui
+      Dependencies: {}
+    Info_9:
+      Name: menucanvas
+      Dependencies:
+        Dependency_0: share
+        Dependency_1: menuui
+    Info_10:
+      Name: comgamecanvas
+      Dependencies:
+        Dependency_0: share
+        Dependency_1: maingo
+        Dependency_2: gameui
+    Info_11:
+      Name: playergamecanvas
+      Dependencies:
+        Dependency_0: share
+        Dependency_1: maingo
+        Dependency_2: gameui

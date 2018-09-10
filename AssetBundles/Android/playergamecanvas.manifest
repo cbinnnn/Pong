@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 4094992421
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 22e59659e96ae5f7a308062fd37f5f7c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1a0417bb025686ca5273119fd6437276
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9aa0d2912c1cf9446a9179c88378bab9, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 826002f869cfe76438886fbb64626ecd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ba60450c5a1202b41869d8ee7136c85f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/PlayerGameCanvas.prefab
+Dependencies:
+- D:/UnityProjects/Pong/AssetBundles/Android/share
+- D:/UnityProjects/Pong/AssetBundles/Android/maingo
+- D:/UnityProjects/Pong/AssetBundles/Android/gameui

@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+CRC: 1221952612
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a2f86a73c1fb057295ff8328214a7939
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3043e0948e83df525526971998060502
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 62
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9aa0d2912c1cf9446a9179c88378bab9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe78b14aed79fcd4581d0f477f105a43, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Player1.prefab
+- Assets/Prefabs/Ball.prefab
+- Assets/Prefabs/Com.prefab
+- Assets/Prefabs/Player2.prefab
+Dependencies:
+- D:/UnityProjects/Pong/AssetBundles/Android/audios
+- D:/UnityProjects/Pong/AssetBundles/Android/maingoui

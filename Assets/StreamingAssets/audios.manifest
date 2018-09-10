@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1082306381
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ac92c53e6e10c69ac8669f490194c7c4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audios/Click.wav
+- Assets/Audios/ChillMusic.mp3
+- Assets/Audios/Hit.wav
+Dependencies: []
